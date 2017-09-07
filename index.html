@@ -5,64 +5,102 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- load MUI -->
-    <link href="assets/mui.min.css" rel="stylesheet" type="text/css" />
-    <link href="assets/style.css" rel="stylesheet" type="text/css" />    
-    <script src=assets/mui.min.js"></script>
+<link rel="stylesheet" href="assets/icons">
+<link rel="stylesheet" href="assets/material.indigo-pink.min.css">
+<script defer src="assets/material.min.js"></script>
+<link rel="stylesheet" href="assets/style.css">
+
+    
+    <title>MEAN stack app</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
   </head>
   <body>
-    <header class="mui-appbar mui--z1">
-      <div class="mui-container">
-        <table width="100%">
-          <tr class="mui--appbar-height">
-            <td class="mui--text-title">Welcome to the MEAN stack</td>
-            <td align="right">
-              <ul class="mui-list--inline mui--text-body2">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Login</a></li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </header>
-    <div id="content-wrapper" class="mui--text-center">
-        <div class="mui--appbar-height"></div>
-<br><br>
-        <div class="mui-container-fluid">
-          <div class="mui-row">
-            <div class="mui-col-md-6">
-              <h2>Build your app with MEAN</h2>
-                <p>MEAN is powered by...
-                    <div class="mui-container-fluid">
-                        <div class="mui-row">                            
-                          <div class="mui-col-md-3">MongoDB</div>
-                          <div class="mui-col-md-3">Express</div>
-                          <div class="mui-col-md-3">Angular</div>
-                          <div class="mui-col-md-3">Node</div>
-                        </div>
-                        <div class="mui-row">                            
-                            <div class="mui-col-md-3">GraphQL</div>
-                            <div class="mui-col-md-3">Material UI</div>
-                            <div class="mui-col-md-3">Gulp</div>
-                            <div class="mui-col-md-3">KArma</div>
-                          </div>
-                    </div>                 
-            </div>
-            <div class="mui-col-md-6">
-              <img src="assets/daphne.png"></img>
+    <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
+      <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Material Design Lite</span>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
+            <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
+              <i class="material-icons">search</i>
+            </label>
+            <div class="mdl-textfield__expandable-holder">
+              <input class="mdl-textfield__input" type="text" id="search">
+              <label class="mdl-textfield__label" for="search">Enter your query...</label>
             </div>
           </div>
-        </div>            
+        </div>
+      </header>
+      <div class="demo-ribbon"></div>
+      <main class="demo-main mdl-layout__content">
+        <div class="demo-container mdl-grid">
+          <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
+          <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
+            <h3>MEAN Stack Installation</h3>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                  <p>The MEAN stack lets you build modern fullstack js applications</p>
+                  <p>What do you want to build today?</p>
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                      <select class="mdl-textfield__input" id="octane" name="octane">
+                        <option></option>
+                        <option value="social">social</option>
+                        <option value="blog">blog</option>
+                        <option value="commerce">commerce</option>
+                        <option value="apptype">application type</option>
+                      </select>
+                      <label class="mdl-textfield__label" for="octane">Application type</label>
+                    </div>
+
+                  </div>
+                <div class="mdl-cell mdl-cell--6-col"><img src="assets/daphne.png"</div>
+              </div>
+          </div>
+        </div>
+        <footer class="demo-footer mdl-mini-footer">
+          <div class="mdl-mini-footer--left-section">
+            <ul class="mdl-mini-footer--link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy and Terms</a></li>
+              <li><a href="#">User Agreement</a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
     </div>
-    <footer>
-      <div class="mui-container mui--text-center">
-        bzzt blah fizz
-      </div>
-    </footer>
-
-
   </body>
   <script>
     // You can also require other files to run in this process
