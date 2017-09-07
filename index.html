@@ -1,17 +1,69 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- load MUI -->
+    <link href="assets/mui.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/style.css" rel="stylesheet" type="text/css" />    
+    <script src=assets/mui.min.js"></script>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
-  </body>
+    <header class="mui-appbar mui--z1">
+      <div class="mui-container">
+        <table width="100%">
+          <tr class="mui--appbar-height">
+            <td class="mui--text-title">Welcome to the MEAN stack</td>
+            <td align="right">
+              <ul class="mui-list--inline mui--text-body2">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Login</a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </header>
+    <div id="content-wrapper" class="mui--text-center">
+        <div class="mui--appbar-height"></div>
+<br><br>
+        <div class="mui-container-fluid">
+          <div class="mui-row">
+            <div class="mui-col-md-6">
+              <h2>Build your app with MEAN</h2>
+                <p>MEAN is powered by...
+                    <div class="mui-container-fluid">
+                        <div class="mui-row">                            
+                          <div class="mui-col-md-3">MongoDB</div>
+                          <div class="mui-col-md-3">Express</div>
+                          <div class="mui-col-md-3">Angular</div>
+                          <div class="mui-col-md-3">Node</div>
+                        </div>
+                        <div class="mui-row">                            
+                            <div class="mui-col-md-3">GraphQL</div>
+                            <div class="mui-col-md-3">Material UI</div>
+                            <div class="mui-col-md-3">Gulp</div>
+                            <div class="mui-col-md-3">KArma</div>
+                          </div>
+                    </div>                 
+            </div>
+            <div class="mui-col-md-6">
+              <img src="assets/daphne.png"></img>
+            </div>
+          </div>
+        </div>            
+    </div>
+    <footer>
+      <div class="mui-container mui--text-center">
+        bzzt blah fizz
+      </div>
+    </footer>
 
+
+  </body>
   <script>
     // You can also require other files to run in this process
     require('./renderer.js')
