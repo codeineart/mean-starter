@@ -14,10 +14,17 @@
  * limitations under the License.
  */
 
+ #meanlogo {
+   width:120px;
+   height: 20vh;   
+   margin-top:30px;
+   background: url('../assets/logo.png') no-repeat;
+ }
 .demo-ribbon {
   width: 100%;
   height: 40vh;
-  background-color: #3F51B5;
+  background: url('../assets/banner.png');
+  /*background-color: #3F51B5;*/
   flex-shrink: 0;
 }
 

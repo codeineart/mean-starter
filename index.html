@@ -51,7 +51,9 @@
     <div class="demo-layout mdl-layout mdl-layout--fixed-header mdl-js-layout mdl-color--grey-100">
       <header class="demo-header mdl-layout__header mdl-layout__header--scroll mdl-color--grey-100 mdl-color-text--grey-800">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Material Design Lite</span>
+          <span id="meanlogo"></span>
+          <span class="mdl-layout-title">Mean Stack Installation</span>
+          
           <div class="mdl-layout-spacer"></div>
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search">
@@ -69,10 +71,20 @@
         <div class="demo-container mdl-grid">
           <div class="mdl-cell mdl-cell--2-col mdl-cell--hide-tablet mdl-cell--hide-phone"></div>
           <div class="demo-content mdl-color--white mdl-shadow--4dp content mdl-color-text--grey-800 mdl-cell mdl-cell--8-col">
-            <h3>MEAN Stack Installation</h3>
             <div class="mdl-grid">
                 <div class="mdl-cell mdl-cell--6-col">
-                  <p>The MEAN stack lets you build modern fullstack js applications</p>
+                  <p>The MEAN stack helps you build<br/>
+                    the next generation of fullstack js applications</p>
+                    <label>The mean power is built by</label>
+                    <div class="mdl-grid">
+                        <div class="mdl-cell mdl-cell--3-col">Mongo</div>
+                        <div class="mdl-cell mdl-cell--3-col">Express</div>
+                        <div class="mdl-cell mdl-cell--3-col">Angular</div>
+                        <div class="mdl-cell mdl-cell--3-col">Node</div>             
+                    </div>
+                        
+
+
                   <p>What do you want to build today?</p>
                   <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                       <select class="mdl-textfield__input" id="octane" name="octane">
@@ -84,13 +96,14 @@
                       </select>
                       <label class="mdl-textfield__label" for="octane">Application type</label>
                     </div>
-
                   </div>
-                <div class="mdl-cell mdl-cell--6-col"><img src="assets/daphne.png"</div>
+                <div class="mdl-cell mdl-cell--4-col"><img src="assets/daphne.png"</div>
               </div>
           </div>
         </div>
-        <footer class="demo-footer mdl-mini-footer">
+        
+      </main>
+      <footer class="demo-footer mdl-mini-footer">
           <div class="mdl-mini-footer--left-section">
             <ul class="mdl-mini-footer--link-list">
               <li><a href="#">Help</a></li>
@@ -99,7 +112,6 @@
             </ul>
           </div>
         </footer>
-      </main>
     </div>
   </body>
   <script>
